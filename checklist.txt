@@ -1,0 +1,14 @@
+Django #
+python #
+celery #
+celery-beat #
+Redis #
+
+Logging
+Pytest
+Project Structure
+Multiple Environ
+RabbitMQ
+Caching
+DRF
+Static Files
