@@ -168,7 +168,7 @@ LOGGING = {
 
     },
     'handlers': {
-        'console': { # Name of the Handler
+        'new': { # Name of the Handler
             'level': 'INFO',
             # 'class': 'logging.StreamHandler',
             # 'formatter': 'verbose' # Defined Above
@@ -177,13 +177,13 @@ LOGGING = {
             'formatter': 'verbose',
             'filename': os.path.join(BASE_DIR, 'logs/crypto_tracker.log'),
             'maxBytes': 1024 * 1024 * 100,  # 100 mb
-        }
+        },
     },
     'loggers': {
         'general': {
-            'handlers': ['console'],
+            'handlers': ['new'],
             'level': 'INFO',
             'propogate': False # default is True if Treu means it will also get logged in 
-        }
-    }
+        },
+    },
 }
