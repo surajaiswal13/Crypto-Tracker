@@ -18,11 +18,11 @@ app.config_from_object('django.conf:settings', namespace='CELERY')
 app.autodiscover_tasks()
 
 app.conf.beat_schedule = {
-    'test-celery-periodic': {
-        'task': 'positions.tasks.create_test_object',
-        'schedule': crontab(minute='*/1'),
-        'kwargs': ({'name':'new2020'})
-    },
+    # 'test-celery-periodic': {
+    #     'task': 'positions.tasks.create_test_object',
+    #     'schedule': crontab(minute='*/1'),
+    #     'kwargs': ({'name':'new2020'})
+    # },
     # 'refresh-data': {
     #     'task': 'positions.tasks.refresh',
     #     'schedule': 60.0

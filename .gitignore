@@ -6,3 +6,4 @@ celerybeat-schedule.dir
 __pycache__/
 migrations/
 checklist.txt
+db.sqlite3-journal
