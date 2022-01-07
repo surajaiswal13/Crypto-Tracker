@@ -175,7 +175,7 @@ LOGGING = {
             # # 'file': # Not required here because of stream Handler
             'class': 'logging.handlers.RotatingFileHandler',
             'formatter': 'verbose',
-            'filename': '/opt/djangoprojects/reports/bin/gunicorn.errors',
+            'filename': os.path.join(BASE_DIR, 'logs/crypto_tracker.log'),
             'maxBytes': 1024 * 1024 * 100,  # 100 mb
         }
     },
