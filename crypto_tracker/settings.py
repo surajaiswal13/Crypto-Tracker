@@ -170,9 +170,13 @@ LOGGING = {
     'handlers': {
         'console': { # Name of the Handler
             'level': 'INFO',
-            'class': 'logging.StreamHandler',
-            'formatter': 'verbose' # Defined Above
-            # 'file': # Not required here because of stream Handler
+            # 'class': 'logging.StreamHandler',
+            # 'formatter': 'verbose' # Defined Above
+            # # 'file': # Not required here because of stream Handler
+            'class': 'logging.handlers.RotatingFileHandler',
+            'formatter': 'verbose',
+            'filename': '/opt/djangoprojects/reports/bin/gunicorn.errors',
+            'maxBytes': 1024 * 1024 * 100,  # 100 mb
         }
     },
     'loggers': {
