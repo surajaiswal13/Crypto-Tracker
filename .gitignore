@@ -6,3 +6,5 @@ celerybeat-schedule.dir
 __pycache__/
 checklist.txt
 db.sqlite3-journal
+Deployment Procedure after base.txt
+Nginx & Apache.txt
